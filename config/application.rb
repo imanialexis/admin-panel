@@ -17,3 +17,5 @@ module AngelasApp
     # the framework and any gems in your application.
   end
 end
+
+config.action_controller.permit_all_parameters

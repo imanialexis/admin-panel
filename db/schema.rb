@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2018_08_22_003749) do
     t.string "name", null: false
     t.date "start_date", null: false
     t.date "end_date", null: false
+    t.integer "course_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

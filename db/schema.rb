@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2018_08_22_003749) do
     t.date "start_date", null: false
     t.date "end_date", null: false
     t.integer "course_id"
+    t.integer "instructor_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -49,7 +50,6 @@ ActiveRecord::Schema.define(version: 2018_08_22_003749) do
     t.integer "age", null: false
     t.integer "salary", null: false
     t.string "highest_edu", null: false
-    t.integer "cohort_id", null: false
     t.boolean "is_admin", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

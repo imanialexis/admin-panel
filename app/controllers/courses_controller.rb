@@ -1,6 +1,6 @@
 class CoursesController < ApplicationController
     def index
-        @all_courses = Course.all
+        @all_courses = Course.all.order(:name)
     end
 
     def show
@@ -8,12 +8,20 @@ class CoursesController < ApplicationController
 
     end
 
+    def edit
+        @course = Course.find(params[:id])
+    end
+    
+    def update
+        @course = Course.find(params[:id])
+        @course.update(course_params)
+
+        redirect_to '/courses'
+    end
+
     def new
         @course = Course.new
 
-    end
-
-    def edit
     end
 
     def create

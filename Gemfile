@@ -5,6 +5,8 @@ ruby '2.5.1'
 
 gem 'pg'
 
+
+
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

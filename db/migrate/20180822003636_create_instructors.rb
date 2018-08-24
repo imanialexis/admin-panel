@@ -8,7 +8,7 @@ class CreateInstructors < ActiveRecord::Migration[5.2]
       t.integer :age , null: false
       t.integer :salary , null: false
       t.string :highest_edu , null: false
-      t.integer :cohort_id , null: false
+      # t.integer :cohort_id , null: false
       t.boolean :is_admin , null: false
 
       t.timestamps

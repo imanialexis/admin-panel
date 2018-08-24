@@ -1,1 +1,9 @@
 <h1>Students</h1>
+
+
+<% @all_students.each do |student|%>
+<h3>Student: <%= student.fname %> <%= student.lname %></h3>
+
+<br>
+
+<% end%>

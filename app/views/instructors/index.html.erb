@@ -1,1 +1,10 @@
 <h1>Instructors</h1>
+
+
+<% @all_instructors.each do |instructor|%>
+<h3>Instructor: <%= instructor.fname %> <%= instructor.lname %>, <%= instructor.highest_edu %></h3>
+
+
+<br>
+
+<% end %>

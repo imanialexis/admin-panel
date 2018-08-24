@@ -5,7 +5,7 @@ ruby '2.5.1'
 
 gem 'pg'
 
-
+gem 'semantic-ui-rails'
 
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 

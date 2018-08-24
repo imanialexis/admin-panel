@@ -1,0 +1,9 @@
+<h1> Add Course </h1>
+
+<%= form_with model: @course do |form| %>
+  <%= form.text_field :name , placeholder: 'Enter name'%>
+  <%= form.text_field :total_class_hours , placeholder: 'Enter total class hours'%>
+<%= form.text_area :description , placeholder: 'Enter course description' %>
+  <%= form.submit %>
+<% end %>
+

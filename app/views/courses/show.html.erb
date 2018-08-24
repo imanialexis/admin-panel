@@ -1,0 +1,5 @@
+<h2><%= @course.name %> </h2>
+<p> <%= @course.description %></p>
+<h4> Class time: <%= @course.total_class_hours %> hours
+<br>
+<%= link_to 'edit' , edit_course_path(@course)%>

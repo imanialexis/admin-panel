@@ -7,6 +7,7 @@ resources :courses
 resources :cohorts
 resources :students
 resources :instructors
+resources :admin
 
-
+post "/courses/new" => "courses#create"
 end

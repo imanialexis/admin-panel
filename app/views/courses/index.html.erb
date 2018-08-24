@@ -1,1 +1,9 @@
 <h1>Courses</h1>
+
+<% @all_courses.each do |course|%>
+<h3>Course: <%= course.name %></h3>
+<p>Description: <%= course.description %></p>
+<p>Total class time: <%= course.total_class_hours %></p>
+<br>
+
+<% end%>

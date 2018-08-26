@@ -1,12 +1,38 @@
-<h1> Add Cohort </h1>
+<h1>Add Cohort </h1>
 
 <%= form_with model: @cohort do |form| %>
-  <%= form.text_field :name , placeholder: 'Enter cohort name'%>
-  <%= form.date_field :start_date , placeholder: 'Enter start date'%>
-<%= form.date_field :end_date , placeholder: 'Enter end date' %>
-<%= form.text_field :course_id , placeholder: 'Enter course ID' %>
-<%= form.text_field :instructor_id , placeholder: 'Enter instructor ID' %>
-  <%= form.submit %>
+    <div class="form-col">
+      <div class="col-md-6">
+          <%= form.text_field :name , placeholder: 'Enter cohort name'%>
+      </div>
+
+      <div class="col">
+        <%= form.date_field :start_date , placeholder: 'Enter start date'%>
+        <%= form.date_field :end_date , placeholder: 'Enter end date' %>
+      </div>
+      
+      <div class ='col'>
+        <%= form.text_field :course_id , placeholder: 'Enter course ID' %>
+      </div>
+
+      <div class ='col'>
+        <%= form.text_field :instructor_id , placeholder: 'Enter instructor ID' %>
+      </div>
+
+      <div class ='col'>
+        <%= form.submit class: "btn btn-primary" %>
+      </div>
+  </div>
+</form>
 <% end %>
 
+
+ <%# <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div> %>
 

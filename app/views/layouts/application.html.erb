@@ -10,10 +10,9 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-
-    <%# needed for flash messages using devise %>
+   
+    <%= render 'layouts/alerts' %>
+    <%# needed for flash messages using devise, easier to create seperate file for styling of alerts%>
 
     <%= yield %>
   </body>

@@ -1,0 +1,15 @@
+<h1>Homepage</h1>
+
+<% if current_user %>
+    
+    <%= link_to 'Sign out' , destroy_user_session_path, method: :delete %>
+    
+    <% else %>
+        
+        <%= link_to 'Sign up' , new_user_registration_path %>
+        
+        <%= link_to 'Sign in' , new_user_session_path %>
+<% end %>
+
+<%# if there is a current user, only show sign out, if not show them option to sign in or sign-up %>
+

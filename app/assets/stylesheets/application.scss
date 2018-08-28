@@ -13,3 +13,73 @@
  */
  @import "bootstrap";
  
+//
+body {
+    background-color: white;
+    // background-image: linear-gradient(to bottom left, black, purple);
+}
+
+
+// ************ homepage *********** //
+
+
+#login-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+#homepage-title {
+    color: black;
+    text-align: center
+
+}
+
+#homepage-subtitle {
+    color:purple;
+    text-align: center;
+    display: flex;
+    justify-content: center
+} 
+
+
+#about-us {
+    width: 50%;
+    text-align: justify;
+    margin:auto;
+    color: black
+}
+
+
+
+#carouselExampleIndicators {
+    margin-top: 100px;
+    width: 75%;
+    
+}
+
+.carousel-item {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+
+#footer {
+    height: 50px;
+    background-color: white;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color:  purple;
+    text-align: center;
+    padding-top: 10px;
+   
+}
+
+// ************ students *********** //
+

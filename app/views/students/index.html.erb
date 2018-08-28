@@ -1,9 +1,15 @@
 <h1>Students</h1>
+<div class="card-deck">
+ 
+    <% @all_students.each do |student|%>
+  <div class="card">
+    <img class="card-img-top" src="/assets/chef.png" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title"><%= student.fname %> <%= student.lname %></h5>
+      <p class="card-text">Course : <%= Course.find(student.cohort_id).name %></p>
+      <p class="card-text"><small class="text-muted"><%= Cohort.find(student.cohort_id).name %></small></p>
+    </div>
+  </div>
 
-
-<% @all_students.each do |student|%>
-<h3>Student: <%= student.fname %> <%= student.lname %></h3>
-
-<br>
-
-<% end%>
+<% end %>
+</div>

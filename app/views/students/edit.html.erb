@@ -1,15 +1,40 @@
 
 
   <h1> Edit Student </h1>
+ 
       <%= form_with model: @student do |form| %>
-        <%= form.text_field :fname , placeholder: 'Enter first name'%>
-          <%= form.text_field :lname , placeholder: 'Enter last name'%>
+        
+
+     <div class="form-group">
+          <%= form.text_field :fname , placeholder: 'Enter first name'%> 
+     </div>
+
+     <div class="form-group">
+     <%= form.text_field :lname , placeholder: 'Enter last name'%>
+     </div>
+
+       <div class="form-group">
+         <%= form.text_field :password , placeholder: 'Enter password'%>
+      </div>
+        
+        <div class="form-group">
             <%= form.text_field :email , placeholder: 'Enter school email'%>
-              <%= form.text_field :password , placeholder: 'Enter password'%>
-                <%= form.text_field :age , placeholder: 'Enter age'%>
+        </div>
+
+              <%# <%= form.text_field :password , placeholder: 'Enter password'%>
+      <div class="form-group">
+        <%= form.text_field :age , placeholder: 'Enter age'%>
+      </div>
                 <%# <%= form.text_field :cohort_id , value: @student.cohort_id %> 
                 <%# disabled  %>
-                  <%= form.hidden_field :is_admin , value: false %>
-        <%= form.submit %>
+      
+      <%= form.hidden_field :is_admin , value: false %>
+
+      <div class="form-group">
+        <%= form.submit class: "btn btn-outline-success" %>
+      </div>
       <% end %>
+
+
+      
  

@@ -7,7 +7,8 @@
             <%= form.text_field :email , placeholder: 'Enter school email'%>
               <%= form.text_field :password , placeholder: 'Enter password'%>
                 <%= form.text_field :age , placeholder: 'Enter age'%>
-                <%= form.text_field :cohort_id , placeholder: 'Enter cohort id'%>
+                <%# <%= form.text_field :cohort_id , value: @student.cohort_id %> 
+                <%# disabled  %>
                   <%= form.hidden_field :is_admin , value: false %>
         <%= form.submit %>
       <% end %>

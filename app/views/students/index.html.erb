@@ -1,9 +1,17 @@
-<h1>Students</h1>
 
+  <h1>Students</h1>
+    <div class="card-deck">
+      <% @all_students.each do |student|%>
+      <div class="card" id = 'student-<%= student.id %>'>
+      <img class="card-img-top" src="/assets/chef3.png" alt="Card image cap">
+      <div class="card-body">
+      <h5 class="card-title" ><%= student.fname %> <%= student.lname %></h5>
+      <p class="card-text">Course : <%= Course.find(student.cohort_id).name %></p>
+      <p class="card-text"><small class="text-muted"><%= Cohort.find(student.cohort_id).name %></small></p>
+      <%= link_to 'Delete', student_path(student), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %>
+    </div>
+  </div>
+<% end %>
+</div>
 
-<% @all_students.each do |student|%>
-<h3>Student: <%= student.fname %> <%= student.lname %></h3>
-
-<br>
-
-<% end%>
+ 

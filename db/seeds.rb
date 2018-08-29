@@ -58,9 +58,9 @@
 #     is_admin: false
 #     )
 #     Student.create(
-#         fname: 'erica', 
-#         lname: 'layne', 
-#         email: 'elayne@lecordonnoir.com', 
+#         fname: 'tasha', 
+#         lname: 'mack', 
+#         email: 'tmack@lecordonnoir.com', 
 #         password: '1234', 
 #         age:'31', 
 #         cohort_id: 1, 
@@ -93,15 +93,15 @@
 #                     cohort_id: 2, 
 #                     is_admin: false
 #                     )
-#                     Student.create(
-#                         fname: 'sam', 
-#                         lname: 'ward', 
-#                         email: 'sward@lecordonnoir.com', 
-#                         password: '1234', 
-#                         age:'32', 
-#                         cohort_id: 2, 
-#                         is_admin: false
-#                         )
+                    # Student.create(
+                    #     fname: 'sam', 
+                    #     lname: 'ward', 
+                    #     email: 'sward@lecordonnoir.com', 
+                    #     password: '1234', 
+                    #     age:'32', 
+                    #     cohort_id: 2, 
+                    #     is_admin: false
+                    #     )
 #                         Student.create(
 #                             fname: 'henry', 
 #                             lname: 'yan', 
@@ -121,18 +121,19 @@
 #                                 cohort_id: 3, 
 #                                 is_admin: false
 #                                 )
-#                                 Student.create(
-#                                     fname: 'riley', 
-#                                     lname: 'thompson', 
-#                                     email: '@lecordonnoir.com', 
-#                                     password: '1234', 
-#                                     age:'23', 
-#                                     cohort_id: 3, 
-#                                     is_admin: false
-#                                     )
+                                # Student.create(
+                                #     fname: 'riley', 
+                                #     lname: 'thompson', 
+                                #     email: '@lecordonnoir.com', 
+                                #     password: '1234', 
+                                #     age:'23', 
+                                #     cohort_id: 3, 
+                                #     is_admin: false
+                                #     )
 
 
 
 
 
 # Admin.create(name: 'admin', email:'admin@lecordonnoir', password: '1234', is_admin: true)
+

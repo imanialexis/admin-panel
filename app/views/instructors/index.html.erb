@@ -1,10 +1,46 @@
 <h1>Instructors</h1>
 
+  <table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Email</th>
+      <th scope="col">Course</th>
+      <th scope="col">Cohort</th>
+    </tr>
+  </thead>
 
-<% @all_instructors.each do |instructor|%>
-<h3>Instructor: <%= instructor.fname %> <%= instructor.lname %>, <%= instructor.highest_edu %></h3>
-
-
-<br>
-
+<% @all_instructors.each_with_index do |instructor, index|%>
+    <tbody>
+        <tr>
+          <th scope="row"><%= index + 1 %> </th>
+          <td> <%= instructor.fname %> </td>
+          <td> <%= instructor.lname %> </td>
+          <td> <%= instructor.email %> </td>
+          <td> instructor.fname </td> 
+         
+          <% instructor.cohorts.each do |cohort| %> 
+            <td> <%= cohort.name %> </td>
+          <% end %>
+          
+        
+        </tr>
 <% end %>
+  </tbody>
+</table>
+
+<%# <% instructor.cohorts.each do | cohort | %>
+          <%# <td><%= cohort.name %>
+
+<%# Course.find(Instructor.find(instructor.id).cohort.course_id).name %>
+
+<%# Course.find(Instructor.find(1).cohorts[0].course_id).name%>
+
+
+<%# Course.find(Instructor.find(instructor.id).cohorts[0].course_id).name%>
+
+
+<%# <% cohort = Cohort.find(instructor.id).course_id %> 
+          <%# <td><%= Course.find(cohort).name%> 

@@ -20,13 +20,17 @@
         
         <% else %>
         
+            <div class = 'sign-options'>
+            <%= link_to 'Sign in' , new_user_session_path %>
+            </div>
+
+
+
           <div class = 'sign-options'>
           <%= link_to 'Sign up' , new_user_registration_path %>
           </div>
 
-            <div class = 'sign-options'>
-            <%= link_to 'Sign in' , new_user_session_path %>
-            </div>
+            
     <% end %>
 <%# </div> %>
 <%# if there is a current user, only show sign out, if not show them option to sign in or sign-up %>

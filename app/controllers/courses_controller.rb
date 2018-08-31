@@ -1,4 +1,7 @@
 class CoursesController < ApplicationController
+
+    before_action :authenticate_user! , only: [:show , :edit, :update, :new , :create]
+    
     def index
         @all_courses = Course.all.order(:name)
     end

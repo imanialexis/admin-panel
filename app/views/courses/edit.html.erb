@@ -1,8 +1,28 @@
+
+<div class ='form-wrapper'>
+
 <h1> Edit Course </h1>
 
 <%= form_with model: @course do |form| %>
-  <%= form.text_field :name , placeholder: 'Enter name'%>
-  <%= form.text_field :total_class_hours , placeholder: 'Enter total class hours'%>
-<%= form.text_area :description , placeholder: 'Enter course description' %>
-  <%= form.submit %>
+
+     <div class="form-group">
+        <%= form.text_field :name , placeholder: 'Enter name'%>
+    </div>
+
+      <div class="form-group">
+        <%= form.text_field :total_class_hours , placeholder: 'Enter total class hours'%>
+    </div>
+
+
+    <div class="form-group">
+      <%= form.text_area :description , placeholder: 'Enter course description' %>
+    </div>
+
+  
+    <div class="form-group">
+      <%= form.submit class: "btn btn-outline-success" %>
+    </div>
+
+</div>
+
 <% end %>

@@ -1,5 +1,6 @@
 class CohortsController < ApplicationController
-    
+
+    before_action :authenticate_user! , only: [:show , :edit, :update, :new , :create]    
     def index
     @all_cohorts = Cohort.all
     end

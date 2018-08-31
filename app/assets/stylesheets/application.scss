@@ -23,10 +23,11 @@ body {
 // ************ homepage *********** //
 
 
-#login-links {
+.sign-options {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 20px;
     
 }
 
@@ -81,5 +82,23 @@ body {
    
 }
 
-// ************ students *********** //
+// ************  START students *********** //
+
+
+
+// ************ END students *********** //
+
+
+
+// ************ START FORMS *********** //
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// ************ END FORMS *********** //
+
 

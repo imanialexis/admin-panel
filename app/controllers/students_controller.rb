@@ -1,4 +1,8 @@
 class StudentsController < ApplicationController
+    before_action :authenticate_user! , only: [:index]
+
+    
+
     def index
         @all_students = Student.all.order(:fname)
      

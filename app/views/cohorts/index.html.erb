@@ -1,13 +1,18 @@
-<h1>Cohorts</h1>
 
+
+    <div class = 'main'>
+        <%# <h1>Cohorts</h1> %>
 
 <% @all_cohorts.each do |cohort|%>
+
 <h3><%= cohort.name %></h3>
 <p>Duration: <%= cohort.start_date.strftime("%B %d, %Y") %> - <%= cohort.end_date.strftime("%B %d, %Y") %> </p>
-<%= cohort.course.name %>
-<p>Instructor :<%= cohort.instructor.fname %> <%= cohort.instructor.lname %> </p>
+<p><%= cohort.course.name %></p>
+<p>Instructor : <%= cohort.instructor.fname %> <%= cohort.instructor.lname %> </p>
 <br>
 
+
 <% end%>
+</div>
 
 

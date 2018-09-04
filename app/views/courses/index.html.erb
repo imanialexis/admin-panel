@@ -3,11 +3,12 @@
 <h1>Courses</h1>
 
 <% @all_courses.each do |course|%>
-<h3><%= course.name %></h3>
+<h3><%= course.name %> </h3> 
+<h5> Registration id: <%= course.id %></h5>
 <p>Description: <%= course.description %></p>
-
 <p>Total class time: <%= course.total_class_hours %></p>
-<br>
 
+
+<hr>
 <% end%>
 </div>

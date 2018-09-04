@@ -1,13 +1,16 @@
 class HomepageController < ApplicationController
 
-layout 'signin' 
+layout 'application' 
   def home
-  #   if current_user?
-  #     redirect_to '/homepage/dashboard'
-  #   end
-
+ 
   end
 
   def dashboard
+
+    @courses = Course.all
+    @instructors = Instructor.all
+    @students = Student.all
+
   end
+
 end

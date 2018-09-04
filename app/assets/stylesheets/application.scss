@@ -15,10 +15,18 @@
  
 //
 body {
-    background-color: yellow;
+    background-color: #818181;
     // background-image: linear-gradient(to bottom left, black, purple);
 }
 
+h1 {
+    text-align:center
+}
+
+
+img {
+    text-align: center;
+}
 
 // ************ homepage *********** //
 
@@ -38,15 +46,15 @@ body {
 }
 
 #homepage-subtitle {
-    color:purple;
+    color:black;
     text-align: center;
     display: flex;
     justify-content: center
 } 
 
 
-#about-us {
-    width: 50%;
+.about-us {
+    width: 70%;
     text-align: justify;
     margin:auto;
     color: black
@@ -62,17 +70,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    color:  purple;
+    color:  black;
     text-align: center;
     padding-top: 10px;
    
 }
 
 // ************  START students *********** //
-#students-header {
+.pages-header {
     text-align: center;
     margin-bottom: 20px
 }
+
+// also used in courses and intructors
 
 // ************ END students *********** //
 

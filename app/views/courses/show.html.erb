@@ -1,7 +1,7 @@
-<div class ='main'>
+<%# <div class ='main'> %>
 <h2><%= @course.name %> </h2>
 <p> <%= @course.description %></p>
 <h4> Class time: <%= @course.total_class_hours %> hours
 <br>
-<%= link_to 'edit' , edit_course_path(@course)%>
-</div>
+<%= link_to 'Edit' , edit_course_path(@course)%>
+<%# </div> %>

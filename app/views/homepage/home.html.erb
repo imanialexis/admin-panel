@@ -1,36 +1,28 @@
     
 
     
-    
     <h1 id ='homepage-title'>Welcome to, Le Cordon Noir </h1>
 
     <h5 id = 'homepage-subtitle'>Brooklyn</h5>
 
-    <p id = 'about-us'>Le Cordon Noir Chefs have worked in some of the most prestigious restaurants in the world, many of them are Michelin-starred and One of the Best Craftsmen in Brooklyn (Un des Meilleurs Ouvriers de Brooklyn - MOF). Every day they share their expertise and experience with our students who learn that achieving excellence goes hand in hand with hard work, dynamism and perseverance.</p>
-
-
-    <span class="sr-only">Next</span>
-  </a>
-</div>  
+    <p class = 'about-us'>Le Cordon Noir Chefs have worked in some of the most prestigious restaurants in the world, many of them are Michelin-starred and One of the Best Craftsmen in Brooklyn (Un des Meilleurs Ouvriers de Brooklyn - MOF). Every day they share their expertise and experience with our students who learn that achieving excellence goes hand in hand with hard work, dynamism and perseverance.</p>
+    <p class = 'about-us'> Register today to be apart of our world renowned classes. Don't delay follow your passion. Classes start soon!</p>
+ 
 
 <%# <div id = 'login-links'> %>
-    <% if current_user %>
-        
-      <div>  <%= link_to 'Sign out' , destroy_user_session_path, method: :delete %> </div>
+<% if current_user %>   
+    <div>  
+      <%= link_to 'Sign out' , destroy_user_session_path, method: :delete %> 
+    </div>
         
         <% else %>
-        
             <div class = 'sign-options'>
-            <%= link_to 'Sign in' , new_user_session_path %>
+                 <%= link_to 'Sign in' , new_user_session_path %>
             </div>
 
-
-
           <div class = 'sign-options'>
-          <%= link_to 'Sign up' , new_user_registration_path %>
-          </div>
-
-            
+            <%= link_to 'Sign up' , new_user_registration_path %>
+          </div>  
     <% end %>
 <%# </div> %>
 <%# if there is a current user, only show sign out, if not show them option to sign in or sign-up %>

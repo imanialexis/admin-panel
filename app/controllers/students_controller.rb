@@ -32,7 +32,6 @@ class StudentsController < ApplicationController
     end
 
     def create
-        p "i am in create"
         @student = Student.new(student_params)  
         @student.save
         

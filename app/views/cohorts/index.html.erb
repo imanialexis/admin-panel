@@ -1,15 +1,16 @@
 
 
     <div class = 'main'>
-        <%# <h1>Cohorts</h1> %>
+        <h1>Cohorts</h1>
 
-<% @all_cohorts.each do |cohort|%>
-<div id = "cohort-<%=cohort.id%>">
-<h3><%= cohort.name %></h3>
-<p>Duration: <%= cohort.start_date.strftime("%B %d, %Y") %> - <%= cohort.end_date.strftime("%B %d, %Y") %> </p>
-<p><%= cohort.name %></p>
-<p>Instructor : <%= cohort.instructor.fname %> <%= cohort.instructor.lname %> </p>
-<%= link_to 'Edit' , edit_cohort_path(cohort)%> / <%= link_to 'Delete', cohort_path(cohort), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %> </td>
+<% @all_cohorts.each do |cohort| %>
+        <div id = "cohort-<%=cohort.id%>">
+        <h3><%= cohort.name %></h3>
+        <p>Duration: <%= cohort.start_date.strftime("%B %d, %Y") %> - <%= cohort.end_date.strftime("%B %d, %Y") %> </p>
+        <p> <%= cohort.course.name%> </p>
+        <p>Instructor : <%= cohort.instructor.fname %> <%= cohort.instructor.lname %> </p>
+        <%= link_to 'Edit' , edit_cohort_path(cohort)%> / <%= link_to 'Delete', cohort_path(cohort), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %> </td>
+        <p> <%= link_to 'View' , cohort_path(cohort) %></p>
 </div>
 <hr>
 

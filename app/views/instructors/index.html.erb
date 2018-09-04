@@ -21,14 +21,14 @@
 
     <% @all_instructors.each_with_index do |instructor, index|%>
         <tbody>
-            <tr>
+            <tr id="instructor-<%=instructor.id%>">
               <th scope="row"><%= index + 1 %> </th>
               <td> <%= instructor.fname %> </td>
               <td> <%= instructor.lname %> </td>
               <td> <%= instructor.email %> </td>
              <td> <%= link_to 'Edit ' , edit_instructor_path(instructor)%></td>
-             <td> <%= link_to 'Delete ' ,instructor_path(instructor), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
-       
+             <td> <%= link_to 'Delete ' , instructor_path(instructor), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
+             
             </tr>
     <% end %>
       </tbody>

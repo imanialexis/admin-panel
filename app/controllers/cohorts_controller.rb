@@ -3,11 +3,14 @@ class CohortsController < ApplicationController
     before_action :authenticate_user! , only: [:show , :edit, :update, :new , :create]    
     
     def index
-    @all_cohorts = Cohort.all
+        @all_cohorts = Cohort.all
     end
 
     def show
         @cohort = Cohort.find(params[:id])
+        @students = Student.where(cohort_id: @cohort.id)
+
+
     end
 
     def edit

@@ -13,22 +13,23 @@
 
   <!-- Side navigation -->
 <div class="sidenav">
+  <a href = "/dashboard">Home</a>
   <a href="/courses">Courses</a>
   <a href="/cohorts">Cohorts</a>
   <a href="/instructors">Instructors</a>
   <a href="/students">Students</a>
-
- 
+  <%= link_to 'Sign out' , destroy_user_session_path, method: :delete %> 
 </div>
+
 
 <!-- Page content -->
-<div class="main">
-          <div>  <%= link_to 'Sign out' , destroy_user_session_path, method: :delete %> </div>
 
-</div>
-   
+    
+  <%# needed for flash messages using devise, easier to create seperate file for styling of alerts%>
     <%= render 'layouts/alerts' %>
-    <%# needed for flash messages using devise, easier to create seperate file for styling of alerts%>
     <%= yield %>
+  
+  
+  
   </body>
 </html>

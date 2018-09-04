@@ -1,6 +1,6 @@
 
 
-    <div class = 'main'>
+    <%# <div class = 'main'> %>
         <h1>Cohorts</h1>
 
 <% @all_cohorts.each do |cohort| %>
@@ -11,13 +11,13 @@
         <p>Instructor : <%= cohort.instructor.fname %> <%= cohort.instructor.lname %> </p>
         <%= link_to 'Edit' , edit_cohort_path(cohort)%> / <%= link_to 'Delete', cohort_path(cohort), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %> </td>
         <p> <%= link_to 'View' , cohort_path(cohort) %></p>
-</div>
+<%# </div> %>
 <hr>
 
 
 <% end%>
-        <%= link_to 'Add Cohort' , new_cohort_path(@cohort), class: "btn btn-success" %>
+        <%= link_to 'Add Cohort' , new_cohort_path(@cohort), class: "btn btn-light" %>
 
-</div>
+<%# </div> %>
 
 

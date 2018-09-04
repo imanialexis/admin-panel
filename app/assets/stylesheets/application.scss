@@ -15,7 +15,7 @@
  
 //
 body {
-    background-color: yellow;
+    background-color: #818181;
     // background-image: linear-gradient(to bottom left, black, purple);
 }
 
@@ -46,15 +46,15 @@ img {
 }
 
 #homepage-subtitle {
-    color:purple;
+    color:black;
     text-align: center;
     display: flex;
     justify-content: center
 } 
 
 
-#about-us {
-    width: 50%;
+.about-us {
+    width: 70%;
     text-align: justify;
     margin:auto;
     color: black
@@ -70,7 +70,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    color:  purple;
+    color:  black;
     text-align: center;
     padding-top: 10px;
    

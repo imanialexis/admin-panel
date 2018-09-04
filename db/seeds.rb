@@ -7,14 +7,14 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-# Course.create(
-#     name: 'Wine & Spirits',
-#     description: 'Our wine and spirits programmes provide training with specific focus in various alcoholic beverages in order to best appreciate and serve them. Courses range from initiation modules to Food and Wine Pairing to Wine Management.',
-#     total_class_hours: 350)
+Course.create(
+    name: 'Wine & Spirits',
+    description: 'Our wine and spirits programmes provide training with specific focus in various alcoholic beverages in order to best appreciate and serve them. Courses range from initiation modules to Food and Wine Pairing to Wine Management.',
+    total_class_hours: 350)
 
-#     Course.create(name: 'Gourmet & Short Courses', description: 'For beginners, gourmet enthusiasts or those wanting to be the best house party host, a wide range of courses have been designed to satisfy the time and budget conscious. ', total_class_hours: 200)
+    Course.create(name: 'Gourmet & Short Courses', description: 'For beginners, gourmet enthusiasts or those wanting to be the best house party host, a wide range of courses have been designed to satisfy the time and budget conscious. ', total_class_hours: 200)
 
-#     Course.create(name: 'Pastry & Confectionery', description: 'Discover the art of Pâtisserie. Courses range from specialized ateliers, basic through advanced levels of pastry and confectionary craft making, plated and boutique style desserts, world delicacies and precise decorating techniques.', total_class_hours: 400)
+    Course.create(name: 'Pastry & Confectionery', description: 'Discover the art of Pâtisserie. Courses range from specialized ateliers, basic through advanced levels of pastry and confectionary craft making, plated and boutique style desserts, world delicacies and precise decorating techniques.', total_class_hours: 400)
 
     # Instructor.create(fname: 'Gordon', lname:'Ramsey', email: 'gramsey@lecordonnoir.com', password:'123', age: 52, salary: 125000, highest_edu: 'MS', is_admin: false)
 

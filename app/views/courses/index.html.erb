@@ -7,7 +7,7 @@
 <h5> Registration id: <%= course.id %></h5>
 <p>Description: <%= course.description %></p>
 <p>Total class time: <%= course.total_class_hours %></p>
-
+<%= link_to 'edit' , edit_course_path(course)%>
 
 <hr>
 <% end%>

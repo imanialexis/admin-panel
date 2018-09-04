@@ -137,3 +137,4 @@
 
 # Admin.create(name: 'admin', email:'admin@lecordonnoir', password: '1234', is_admin: true)
 
+User.create(email: 'test@example.com', password: 'password', admin: true)

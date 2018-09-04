@@ -1,0 +1,33 @@
+<div class ='form-wrapper'>
+<div class = 'main'>
+
+<h1>Edit Cohort </h1>
+
+<%= form_with model: @cohort do |form| %>
+   
+     <div class="form-group">
+          <%= form.text_field :name , placeholder: 'Enter cohort name'%>
+      </div>
+
+     <div class="form-group">
+        <%= form.date_field :start_date , placeholder: 'Enter start date'%>
+        </div>
+
+      <div class="form-group">
+        <%= form.date_field :end_date , placeholder: 'Enter end date' %>
+      </div>
+      
+     <div class="form-group">
+        <%= form.text_field :course_id , placeholder: 'Enter course ID' %>
+      </div>
+
+     <div class="form-group">
+        <%= form.text_field :instructor_id , placeholder: 'Enter instructor ID' %>
+      </div>
+
+     <div class="form-group">
+        <%= form.submit class: "btn btn-primary" %>
+      </div>
+  </div>
+</div>
+<% end %>

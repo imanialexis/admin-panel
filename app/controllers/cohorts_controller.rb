@@ -1,13 +1,13 @@
 class CohortsController < ApplicationController
 
     before_action :authenticate_user! , only: [:show , :edit, :update, :new , :create]    
+    
     def index
     @all_cohorts = Cohort.all
     end
 
     def show
         @cohort = Cohort.find(params[:id])
-
     end
 
     def edit
@@ -30,6 +30,13 @@ class CohortsController < ApplicationController
         @cohort = Cohort.new(cohort_params)  
         @cohort.save
         redirect_to '/cohorts'
+    end
+
+
+    def destroy
+        @cohort = Cohort.find(params[:id])
+        @cohort.destroy 
+
     end
 
     private 

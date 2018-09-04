@@ -19,6 +19,13 @@ body {
     // background-image: linear-gradient(to bottom left, black, purple);
 }
 
+h1 {
+    text-align:center
+}
+
+img {
+    text-align: center;
+}
 
 // ************ homepage *********** //
 
@@ -69,10 +76,12 @@ body {
 }
 
 // ************  START students *********** //
-#students-header {
+.pages-header {
     text-align: center;
     margin-bottom: 20px
 }
+
+// also used in courses and intructors
 
 // ************ END students *********** //
 

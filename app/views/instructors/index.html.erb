@@ -1,35 +1,48 @@
-<h1>Instructors</h1>
+<div class ='main'>
+   <div class ='page-header'>
+    <h1>Instructors</h1>
+     <%# <img src = '/assets/chef4.png'> %>
+  </div>
 
-  <table class="table table-hover">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Email</th>
-      <th scope="col">Course</th>
-      <th scope="col">Cohort</th>
-    </tr>
-  </thead>
-
-<% @all_instructors.each_with_index do |instructor, index|%>
-    <tbody>
+      <table class="table table-hover">
+      <thead class="thead-dark">
         <tr>
-          <th scope="row"><%= index + 1 %> </th>
-          <td> <%= instructor.fname %> </td>
-          <td> <%= instructor.lname %> </td>
-          <td> <%= instructor.email %> </td>
-          <td> instructor.fname </td> 
-         
-          <% instructor.cohorts.each do |cohort| %> 
-            <td> <%= cohort.name %> </td>
-          <% end %>
-          
-        
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Email</th>
+          <th scope="col">Edit</th>
+          <th scope="col">Delete</th>
+          <%# <th scope="col">Edit</th> %>
+          <%# <th scope="col">Delete</th> %>
+
         </tr>
-<% end %>
-  </tbody>
-</table>
+      </thead>
+
+    <% @all_instructors.each_with_index do |instructor, index|%>
+        <tbody>
+            <tr>
+              <th scope="row"><%= index + 1 %> </th>
+              <td> <%= instructor.fname %> </td>
+              <td> <%= instructor.lname %> </td>
+              <td> <%= instructor.email %> </td>
+             <td> <%= link_to 'Edit ' , edit_instructor_path(instructor)%></td>
+             <td> <%= link_to 'Delete ' ,instructor_path(instructor), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
+       
+            </tr>
+    <% end %>
+      </tbody>
+    </table>
+            <%= link_to 'Add Instructor' , new_instructor_path(@instructor), class: "btn btn-success"%>
+
+  </div>
+</div>
+
+
+
+ <%# <% instructor.cohorts.each do |cohort| %>  
+                <%# <td> <%= cohort.name %> 
+              <%# <% end %> 
 
 <%# <% instructor.cohorts.each do | cohort | %>
           <%# <td><%= cohort.name %>

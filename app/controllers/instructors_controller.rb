@@ -1,4 +1,6 @@
 class InstructorsController < ApplicationController
+    before_action :authenticate_user! , only: [:index]
+
     def index
         @all_instructors = Instructor.all.order(:fname)
     end
@@ -18,6 +20,7 @@ class InstructorsController < ApplicationController
 
         redirect_to '/instructors'
     end
+    
     def new
         @instructor = Instructor.new
 
@@ -26,7 +29,7 @@ class InstructorsController < ApplicationController
     def create
         @instructor = Instructor.new(instructor_params)  
         @instructor.save
-        redirect_to @instructor
+        redirect_to '/instructors'
     end
 
     private 

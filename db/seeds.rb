@@ -16,36 +16,36 @@
 
 #     Course.create(name: 'Pastry & Confectionery', description: 'Discover the art of Pâtisserie. Courses range from specialized ateliers, basic through advanced levels of pastry and confectionary craft making, plated and boutique style desserts, world delicacies and precise decorating techniques.', total_class_hours: 400)
 
-    Instructor.create(fname: 'Gordon', lname:'Ramsey', email: 'gramsey@lecordonnoir.com', password:'123', age: 52, salary: 125000, highest_edu: 'MS', is_admin: false)
+    # Instructor.create(fname: 'Gordon', lname:'Ramsey', email: 'gramsey@lecordonnoir.com', password:'123', age: 52, salary: 125000, highest_edu: 'MS', is_admin: false)
 
-    Instructor.create(fname: 'Janice', lname:'Wong', email: 'jwong@lecordonnoir.com', password:'123', age: 37, salary: 128000, highest_edu: 'MS', is_admin: false)
+    # Instructor.create(fname: 'Janice', lname:'Wong', email: 'jwong@lecordonnoir.com', password:'123', age: 37, salary: 128000, highest_edu: 'MS', is_admin: false)
 
-    Instructor.create(fname: 'Roble', lname:'Ali', email: 'rali@lecordonnoir.com', password:'123' ,age: 32, salary: 132000, highest_edu: 'MS', is_admin: false)
+    # Instructor.create(fname: 'Roble', lname:'Ali', email: 'rali@lecordonnoir.com', password:'123' ,age: 32, salary: 132000, highest_edu: 'MS', is_admin: false)
     
-    # Cohort.create(
-    #     name:'Winter Cohort', 
-    #     start_date: DateTime.new(2018,9,20),  
-    #     end_date: DateTime.new(2018,12,20),
-    #     course_id: 1,
-    #     instructor_id: 1
+    Cohort.create(
+        name:'Winter Cohort', 
+        start_date: DateTime.new(2018,9,20),  
+        end_date: DateTime.new(2018,12,20),
+        course_id: 1,
+        instructor_id: 1
     
-    # )
+    )
 
-    # Cohort.create(
-    #     name:'Spring Cohort',
-    #     start_date: DateTime.new(2019,3,20),
-    #     end_date: DateTime.new(2019,6,20),
-    #     course_id: 2,
-    #     instructor_id: 2
-    # )
+    Cohort.create(
+        name:'Spring Cohort',
+        start_date: DateTime.new(2019,3,20),
+        end_date: DateTime.new(2019,6,20),
+        course_id: 2,
+        instructor_id: 2
+    )
 
-    # Cohort.create(
-    #     name:'Fall Cohort',
-    #     start_date: DateTime.new(2019,8,20),
-    #      end_date: DateTime.new(2019,11,20),
-    #      course_id: 3,
-    #      instructor_id: 3
-    # )
+    Cohort.create(
+        name:'Fall Cohort',
+        start_date: DateTime.new(2019,8,20),
+         end_date: DateTime.new(2019,11,20),
+         course_id: 3,
+         instructor_id: 3
+    )
 
 
 # Student.create(

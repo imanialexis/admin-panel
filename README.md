@@ -23,3 +23,4 @@
  ### username : test@example.com
  ### password : password
 
+![Alt text](admin-panel-screenshot.png)

@@ -10,6 +10,7 @@
 
 ### Built with
   * Ruby on Rails
+  * Devise for user authentication
     * AJAX in Rails
   * jQuery 
   * HTML

@@ -5,25 +5,21 @@
 
 
 
-### Ruby version
- ## 5.2.1
+### Ruby version -  5.2.1
 
 
-### Technologies Used
-  ## Ruby on Rails, UI Branding, Data Integrity, AJAX in Rails, APIs and deploying a Rails application to Heroku.
+### Built with
+  * Ruby on Rails
+    * AJAX in Rails
+  * jQuery 
+  * HTML
+  * CSS/ SCSS
+  * Bootstrap
+  * Postgres
 
 
 
-* Configuration
+### Demo 
+ ### username : test@example.com
+ ### password : password
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...

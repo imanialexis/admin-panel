@@ -1,24 +1,27 @@
-# README
+## Description
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Admin panel for a fictitious school whereby the administrator can create users and complete common administrative tasks.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
+### Ruby version -  5.2.1
 
-* Database creation
 
-* Database initialization
+### Built with
+  * Ruby on Rails
+  * Devise for user authentication
+    * AJAX in Rails
+  * jQuery 
+  * HTML
+  * CSS/ SCSS
+  * Bootstrap
+  * Postgres
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+### Demo 
+ ### username : test@example.com
+ ### password : password
 
-* ...
+![Alt text](admin-panel-screenshot.png)

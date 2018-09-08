@@ -121,6 +121,7 @@ Student.create(
                                 cohort_id: 3, 
                                 is_admin: false
                                 )
+                                
                                 Student.create(
                                     fname: 'riley', 
                                     lname: 'thompson', 

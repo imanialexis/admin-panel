@@ -28,12 +28,21 @@ class StudentsController < ApplicationController
 
     def new
         @student = Student.new
+        @cohorts = Cohort.all
+        @cohorts_info = []
+            @cohorts.each do |cohort|
+                @cohorts_info.push(cohort.name + " - ID:" + cohort.id.to_s )
+            end
+        
 
     end
 
     def create
         @student = Student.new(student_params)  
         @student.save
+      
+
+            
         
         redirect_to '/students'
     end

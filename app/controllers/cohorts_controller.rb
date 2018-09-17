@@ -26,6 +26,18 @@ class CohortsController < ApplicationController
 
     def new
         @cohort = Cohort.new
+        @instructors = Instructor.all
+        @courses = Course.all
+
+        @instructors_info = []
+            @instructors.each do |instructor|
+                @instructors_info.push(instructor.fname + ' '+ instructor.lname + " - ID:" + instructor.id.to_s )
+            end
+
+        @courses_info = []
+        @courses.each do |course|
+            @courses_info.push(course.name + " - ID:" + course.id.to_s )
+        end
 
     end
 

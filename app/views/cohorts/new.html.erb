@@ -18,11 +18,16 @@
       </div>
       
      <div class="form-group">
-        <%= form.text_field :course_id , placeholder: 'Enter course ID' %>
+      <% form.label :course_id %> Course 
+            <%= form.select :course_id, (@courses_info) %>
+        
       </div>
 
      <div class="form-group">
-        <%= form.text_field :instructor_id , placeholder: 'Enter instructor ID' %>
+           <% form.label :instructor_id %> Instructor 
+            <%= form.select :instructor_id, (@instructors_info) %>
+                
+         </div>
       </div>
 
      <div class="form-group">

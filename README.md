@@ -28,6 +28,6 @@
 
 ### Demo 
  ## username : test@example.com
- ###password : password
+ ## password : password
 
 ![Alt text](admin-panel-screenshot.png)

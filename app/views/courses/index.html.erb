@@ -2,15 +2,32 @@
 <%# <div class='main'> %>
         <h1>Courses</h1>
 
+        <table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      
+      <th scope="col"> ID</th>
+      <th scope="col">Course</th>
+      <th scope="col" style="
+    text-align: center">Description</th>
+      <th scope="col">Hours</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
         <% @all_courses.each do |course|%>
-           <div id= 'course-<%= course.id%>'>
-                <h3><%= course.name %> </h3> 
-                <h5> Registration id: <%= course.id %></h5>
-                <p>Description: <%= course.description %></p>
-                <p>Total class time: <%= course.total_class_hours %></p>
-                <%= link_to 'Edit' , edit_course_path(course)%> / <%= link_to 'Delete', course_path(course), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %>
-           </div>
-        <hr>
+        <tbody>
+         <tr id= 'course-<%= course.id%>'>
+                <td><%= course.id %></td>
+                <td><%= course.name %> </td>
+                <td><%= course.description %></td>
+                <td> <%= course.total_class_hours %></td>
+               <td> <%= link_to 'Edit' , edit_course_path(course)%> 
+               <td> <%= link_to 'Delete', course_path(course), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
+           
+       </tr>
         <% end%>
+ </tbody>
+</table>
         <%= link_to 'Add Course' , new_course_path(@course), class: "btn btn-light" %>
-<%# </div> %>
+

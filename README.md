@@ -33,4 +33,3 @@
 
 ![Alt text](admin-panel-screenshot.png)
 
-![Alt text](welcome.png)

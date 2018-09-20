@@ -32,5 +32,5 @@
  **password** : password
 
 ![Alt text](admin-panel-screenshot.png)
-<img width="1396" alt="courses" src="https://user-images.githubusercontent.com/33199892/45792327-4c1fd300-bc5b-11e8-8717-d190cdbb49ae.png">
+
 

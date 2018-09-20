@@ -24,6 +24,12 @@ class CoursesController < ApplicationController
 
     def new
         @course = Course.new
+        @instructors = Instructor.all
+
+        @instructors_info = []
+            @instructors.each do |instructor|
+                @instructors_info.push(instructor.fname + ' '+ instructor.lname + " - ID:" + instructor.id.to_s )
+            end
 
     end
 

@@ -20,30 +20,19 @@
      <div class="form-group">
       <% form.label :course_id %> Course 
             <%= form.select :course_id, (@courses_info) %>
-        
       </div>
 
      <div class="form-group">
            <% form.label :instructor_id %> Instructor 
             <%= form.select :instructor_id, (@instructors_info) %>
-                
-         </div>
       </div>
 
      <div class="form-group">
         <%= form.submit class: "btn btn-light" %>
       </div>
-  </div>
+ 
+ </div>
 </div>
 <% end %>
 
-
- <%# <div class="row">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="First name">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Last name">
-    </div>
-  </div> %>
 

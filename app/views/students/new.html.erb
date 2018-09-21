@@ -16,7 +16,7 @@
      </div>
 
     <div class="form-group">
-        <%= form.text_field :password , placeholder: 'Enter password'%>
+        <%= form.password_field :password , placeholder: 'Enter password'%>
        </div>
     
   <div class="form-group">
@@ -24,11 +24,11 @@
            <%= form.select :age , (18..150) %>
 
         </div>
+    
     <div class="form-group">
-          <% form.label :cohort_id %> Cohort 
-            <%= form.select :cohort_id, (@cohorts_info) %>
-                
-         </div>
+        <% form.label :cohort_id %> 
+        <%= collection_select(:student, :cohort_id, Cohort.all, :id, :name) %>     
+    </div>
     
        <div class="form-group">
          <%= form.hidden_field :is_admin , value: false %>

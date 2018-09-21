@@ -18,18 +18,32 @@
       </div>
       
      <div class="form-group">
-      <% form.label :course_id %> Course 
-            <%= form.select :course_id, (@courses_info) %>
+      <% form.label :course_id %> Select Course 
+            <%# <%= form.select :course_id, @courses_id %> 
+          <%= collection_select(:cohort, :course_id, Course.all, :id, :name) %>
       </div>
 
+      
+
      <div class="form-group">
-           <% form.label :instructor_id %> Instructor 
-            <%= form.select :instructor_id, (@instructors_info) %>
+           <% form.label :instructor_id %> Select Instructor 
+        <%= collection_select(:cohort, :instructor_id, Instructor.all, :id, :lname) %>
+
+          
       </div>
+
+    <%# <div class="form-group">
+           <% form.label 'Instructor  Options'  %> 
+            <%# <%= form.select @instructors_info %> 
+            <%# <%= options_from_collection_for_select(Instructor.all, :id, :fname, :lname) %>
+          
+      <%# </div> %> 
 
      <div class="form-group">
         <%= form.submit class: "btn btn-light" %>
       </div>
+
+     
  
  </div>
 </div>

@@ -20,9 +20,7 @@ class CohortsController < ApplicationController
     def update
         @cohort = Cohort.find(params[:id])
         @cohort.update(cohort_params)
-        puts " I'M IN THE UPDATE METHOD"
-        puts " I'M IN THE UPDATE METHOD"
-        puts " I'M IN THE UPDATE METHOD"
+     
 
         redirect_to '/cohorts'
     end
@@ -32,13 +30,17 @@ class CohortsController < ApplicationController
         @courses = Course.all
         @instructors = Instructor.all
 
+        @courses_id = []
         @courses_info = []
             @courses.each do |course|
+                @courses_id.push(course.id.to_s )
                 @courses_info.push(course.name + "ID:" + course.id.to_s )
             end
 
+        @instructors_id = []
         @instructors_info = []
             @instructors.each do |instructor|
+                @instructors_id.push(instructor.id.to_s )
                 @instructors_info.push(instructor.fname + ' '+ instructor.lname + " - ID:" + instructor.id.to_s )
             end
        
@@ -48,9 +50,7 @@ class CohortsController < ApplicationController
     def create
         @cohort = Cohort.new(cohort_params)  
         @cohort.save
-        puts " I'M IN THE CREATE METHOD"
-        puts " I'M IN THE CREATE METHOD"
-        puts " I'M IN THE CREATE METHOD"
+
 
         redirect_to '/cohorts'
     end

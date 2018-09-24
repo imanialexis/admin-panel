@@ -15,6 +15,23 @@ class CohortsController < ApplicationController
 
     def edit
         @cohort = Cohort.find(params[:id])
+       
+        @courses = Course.all
+        @instructors = Instructor.all
+
+        @courses_id = []
+        @courses_info = []
+            @courses.each do |course|
+                @courses_id.push(course.id.to_s )
+                @courses_info.push(course.name + "ID:" + course.id.to_s )
+            end
+
+        @instructors_id = []
+        @instructors_info = []
+            @instructors.each do |instructor|
+                @instructors_id.push(instructor.id.to_s )
+                @instructors_info.push(instructor.fname + ' '+ instructor.lname + " - ID:" + instructor.id.to_s )
+            end
     end
 
     def update

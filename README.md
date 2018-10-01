@@ -12,7 +12,7 @@
   * HTML
   * CSS/SCSS
   * Bootstrap
-  * PostgreSQL
+  * Postgres
 
 ### Demo 
  **username** : test@example.com
